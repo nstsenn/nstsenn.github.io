@@ -172,8 +172,8 @@ nav ul li {
     float: left;
     width: 25%;
 }
-/*------------------------------------navigation---------------------------------------*/
-.banner-line__first-banner {
+/*------------------------------------banner---------------------------------------*/
+.slick-slider {
     box-sizing: border-box;
     padding: 30px 0;
 }
