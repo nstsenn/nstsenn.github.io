@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-input, textarea, select { //отключить стили в сафари
-    -webkit-appearance: none;
+input, textarea, select {
+/ / отключить стили в сафари -webkit-appearance: none;
 }
 
 body {
@@ -81,7 +81,7 @@ img {
 }
 
 .header-middle-line__logo-block .logotext {
-    padding:13px 0;
+    padding: 13px 0;
     display: inline-block;
     vertical-align: middle;
 
@@ -123,8 +123,8 @@ img {
     width: 15%;
     cursor: pointer;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
 
 .header-middle-line__search-block .submit:hover {
@@ -176,6 +176,7 @@ nav ul li {
     float: left;
     width: 25%;
 }
+
 /*------------------------------------banner---------------------------------------*/
 .slick-slider {
     box-sizing: border-box;
@@ -187,7 +188,8 @@ nav ul li {
     width: 50%;
     text-align: center;
 }
-.banner-line__first-banner--left img{
+
+.banner-line__first-banner--left img {
     border-right: 2px solid #bababa;
     max-width: 380px;
 }
@@ -216,7 +218,7 @@ nav ul li {
 .banner-line__first-banner--right p {
     color: #000000;
     font-size: 14px;
-    padding-right:150px;
+    padding-right: 150px;
 }
 
 .banner-line__first-banner--right input {
@@ -420,7 +422,8 @@ footer .wrapper {
         text-align: center;
         margin: 0 auto;
     }
-    .banner-line__first-banner--left img{
+
+    .banner-line__first-banner--left img {
         border-bottom: 2px solid #bababa;
         border-right: none;
         max-width: 70%;
@@ -435,7 +438,7 @@ footer .wrapper {
     }
 
     .banner-line__first-banner--right p {
-        padding:10px 100px;
+        padding: 10px 100px;
     }
 
     .banner-line__first-banner--right input {
@@ -447,6 +450,7 @@ footer .wrapper {
         width: calc(100% / 2 - 20px);
         text-align: center;
     }
+
     .footer-line__footer-list:nth-child(2n+3) {
         clear: both;
     }
@@ -464,9 +468,11 @@ footer .wrapper {
     .catalog-line__catalog-item:nth-child(2n+3) {
         clear: both;
     }
+
     .header-middle-line__logo-block {
         text-align: center;
     }
+
     .header-middle-line__logo-block img {
         float: none;
     }
@@ -487,18 +493,21 @@ footer .wrapper {
         width: calc(100% - 40px);
         margin: 20px;
     }
+
     .header-middle-line__logo-block, .header-middle-line__search-block, .header-middle-line__cart-block {
         display: block;
         float: none;
         width: calc(100% - 40px);
         margin: 30px 20px;
     }
+
     .footer-line__footer-list {
         float: none;
         box-sizing: border-box;
         width: calc(100% - 20px);
         text-align: center;
     }
+
     .footer-line__footer-list:nth-child(2n+3) {
         clear: none;
     }
