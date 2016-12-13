@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans');
 
 input, textarea, select {
--webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 body {
@@ -92,17 +92,30 @@ img {
 
 .header-middle-line__search-block .search-input {
     border: none;
-    box-shadow: inset 0px 5px 5px rgba(0,0,0,0.9); ;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.9);;
     background-color: #ccaa66;
     padding: 10px 15% 10px 10px;
     margin: 0;
     width: 100%;
 }
-.header-middle-line__search-block .search-input::-webkit-input-placeholder {color:#ffffff;}
-.header-middle-line__search-block .search-input::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-.header-middle-line__search-block .search-input:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
-.header-middle-line__search-block .search-input:-ms-input-placeholder      {color:#ffffff;}
 
+.header-middle-line__search-block .search-input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.header-middle-line__search-block .search-input::-moz-placeholder {
+    color: #ffffff;
+}
+
+/* Firefox 19+ */
+.header-middle-line__search-block .search-input:-moz-placeholder {
+    color: #ffffff;
+}
+
+/* Firefox 18- */
+.header-middle-line__search-block .search-input:-ms-input-placeholder {
+    color: #ffffff;
+}
 
 .header-middle-line__search-block .submit {
     border: none;
@@ -188,26 +201,23 @@ nav ul li {
 }
 
 .banner-line__first-banner--left img {
-    border-right: 2px solid #bababa;
-    max-width: 380px;
 }
 
 .banner-line__first-banner--right {
     box-sizing: border-box;
     float: right;
     width: 50%;
-    font-family: 'Verdana', sans-serif;
-    padding: 60px;
 }
 
 .banner-line__first-banner--right h2 {
-    color: #636363;
-    font-size: 40px;
+    color: #996633;
+    font-size: 48px;
     font-weight: bold;
+    font-family: 'Lobster', cursive;
 }
 
 .banner-line__first-banner--right h3 {
-    color: #ff0000;
+    color: #443322;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -215,24 +225,17 @@ nav ul li {
 
 .banner-line__first-banner--right p {
     color: #000000;
-    font-size: 14px;
-    padding-right: 150px;
+    font-size: 18px;
 }
 
 .banner-line__first-banner--right input {
-    border: 1px solid #ff0000;
     color: #000000;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    background-color: #ffffff;
+    background-color: #ccaa66;
     padding: 5px 5px;
-    font-family: 'Verdana', sans-serif;
     margin: 20px 0;
     cursor: pointer;
-}
-
-.banner-line__first-banner--right input:hover {
-    color: #D43737;
 }
 
 /*------------------------------------section-sales---------------------------------------*/
@@ -246,31 +249,30 @@ nav ul li {
     float: left;
     margin: 0 20px;
     width: calc(100% / 3 - 40px);
-    background-color: #ff0000;
+    background-color: #443322;
     padding: 20px;
     text-align: center;
     color: #ffffff;
-    font-family: 'Verdana', sans-serif;
 }
 
 .sale-line__sale-items__sale-item h2 {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .sale-line__sale-items__sale-item p {
-    margin: 0;
-    font-family: 'Verdana', sans-serif;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .sale-line__sale-items__sale-item a {
     display: block;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: underline;
     color: inherit;
     margin-top: 10px;
-
+    font-weight: bold;
 }
 
 /*------------------------------------section-catalog---------------------------------------*/
@@ -307,11 +309,12 @@ nav ul li {
 .catalog-line__catalog-item--leftside p {
     color: #636363;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .catalog-line__catalog-item__item-price {
     color: #ff0000;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
