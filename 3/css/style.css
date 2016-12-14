@@ -2,11 +2,11 @@
 
 input, textarea, select {
     -webkit-appearance: none;
+    outline: none;
 }
 
 body {
     font-family: 'PT Sans', sans-serif;
-    /*font-family: 'Lobster', cursive;*/
 }
 
 a {
@@ -40,14 +40,14 @@ img {
 
 }
 
-.header-top-line .social_top {
+.header-top-line .header-top-icons {
     width: 20px;
     height: 22px;
     display: inline-block;
     vertical-align: middle;
 }
 
-use.header-top-line_icons {
+use.top_icons {
     fill: #bb9955;
 }
 
@@ -291,7 +291,7 @@ nav ul a:hover {
 
 /*------------------------------------section-catalog---------------------------------------*/
 .catalog-line {
-    margin: 5px -17.5px;
+    margin: 5px -17.5px 17.5px;
     padding: 0 35px;
 }
 
@@ -314,22 +314,45 @@ nav ul a:hover {
     max-width: 90%;
 }
 
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
+    min-height: 150px;
+}
+
+.img-wrapper img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+}
+
+
 .catalog-line__catalog-item--leftside h2 {
-    color: #909090;
+    font-family: 'Lobster', cursive;
+    color: #000000;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 .catalog-line__catalog-item--leftside p {
-    color: #636363;
-    font-size: 12px;
+    color: #000000;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .catalog-line__catalog-item__item-price {
-    color: #ff0000;
+    font-family: 'Lobster', cursive;
+    color: #996633;
     font-size: 24px;
     font-weight: bold;
+    display: block;
+    margin: 15px 0;
 }
 
 .catalog-line__catalog-item a {
@@ -354,12 +377,11 @@ nav ul a:hover {
 
 /*------------------------------------footer---------------------------------------*/
 footer .wrapper {
-    background-color: #1e1e1e;
-    min-height: 120px;
+    background-color: #443322;
 }
 
 .footer-line {
-    margin: 0 -10px;
+    padding: 0 35px;
     color: #ffffff;
 }
 
@@ -373,15 +395,16 @@ footer .wrapper {
 
 .footer-line__footer-list h2 {
     display: block;
-    margin: 20px 0;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
 }
 
 .footer-line__footer-list a {
     display: block;
     color: inherit;
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 15px 0;
+    font-size: 18px;
 }
 
 .footer-line__footer-list .social-links {
@@ -390,16 +413,24 @@ footer .wrapper {
 
 .footer-line__footer-list .social-links a {
     display: inline-block;
-    width: calc(100% / 3.1 - 20px);
-    text-align: center;
+    text-align: left;
     margin: 0 10px;
 }
 
+.footer-icons {
+    width: 56px;
+    height: 68px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+use.f_icons {
+    fill: #ffffff;
+}
+
 .footer-line__footer-list .phone-numbers {
-    font-size: 28px;
-    margin: 10px;
-    text-align: center;
-    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: left;
     overflow: hidden;
 }
 
