@@ -127,6 +127,8 @@ svg path {
 }
 
 .header-middle-line__search-block .submit:hover {
+    background: url(../i/icons_svg/lupa_black.svg) 50% no-repeat, #996633;
+    background-size: 25px 25px;
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -185,7 +187,9 @@ nav ul li a {
 }
 
 nav ul a:hover {
-    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.9);
+    color: #000000;
+    background: #996633;
+
 }
 
 /*------------------------------------banner---------------------------------------*/
@@ -240,15 +244,20 @@ nav ul a:hover {
 }
 
 .banner-line__first-banner--right a {
-    color: #000000;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
-    background-color: #ccaa66;
+    background-color: #443322;
     padding: 10px 30px;
     margin: 10px 0;
     cursor: pointer;
     display: inline-block;
     border-radius: 10px;
+}
+
+.banner-line__first-banner--right a:hover {
+    color: #000000;
+    background-color: #996633;
 }
 
 /*------------------------------------section-sales---------------------------------------*/
