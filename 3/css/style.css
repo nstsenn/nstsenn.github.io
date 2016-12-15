@@ -40,10 +40,6 @@ img {
     border-bottom: 2px solid #bb9955;
 }
 
-.header-top-line a{
-
-}
-
 .header-top-line .header-top-icons {
     width: 20px;
     height: 22px;
@@ -53,10 +49,6 @@ img {
 
 use.top_icons {
     fill: #bb9955;
-}
-
-svg path {
-    fill: inherit;
 }
 
 .header-top-line__social-block {
