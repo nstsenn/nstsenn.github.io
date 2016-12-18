@@ -449,10 +449,24 @@ footer .wrapper {
 }
 
 .footer-line__footer-list h2 {
-    display: block;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0 0 15px 0;
+    line-height: 30px;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 35px;
+}
+
+.footer-line__footer-list h2::before {
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    left: -50px;
+    height: 1px;
+    overflow: hidden;
+    content: '';
 }
 
 .footer-line__footer-list a {
@@ -526,7 +540,7 @@ use.f_icons {
         margin: 0 auto;
     }
 
-    .banner-line__first-banner--right .banner__text{
+    .banner-line__first-banner--right .banner__text {
         text-align: center;
     }
 
