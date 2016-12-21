@@ -85,10 +85,22 @@ img {
 
 use.top_icons {
     fill: #bb9955;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+use.top_icons:hover {
+    fill: #443322;
 }
 
 .header-top-line__login-block a {
     color: #bb9955;
+}
+
+.header-top-line__login-block a:hover {
+    color: #443322;
+    font-weight: bold;
 }
 
 .header-top-line__login-block span {
@@ -220,6 +232,9 @@ nav ul li a {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
 }
 
 nav ul a:hover {
@@ -494,7 +509,16 @@ footer .wrapper {
 
 use.f_icons {
     fill: #ffffff;
+    max-width: 70%;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
 }
+
+use.f_icons:hover {
+    fill: #000000;
+}
+
 
 .footer-line__footer-list .phone-numbers {
     font-size: 30px;
