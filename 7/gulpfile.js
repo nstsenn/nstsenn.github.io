@@ -36,11 +36,14 @@ gulp.task('watch', function(){
 
 gulp.task('serve', function(){
     browserSync.init({
-        proxy:"nstsenn.github.io",
+        server: {
+            baseDir: "./"
+        },
+        // proxy:"nstsenn.github.io",
         browser:"chrome",
-        startPath:"/7/build",
+        startPath:"/build",
         notify:false,
-        open:false
+        open:true
     })
 });
 
