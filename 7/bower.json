@@ -1,0 +1,17 @@
+{
+  "name": "nstsenn.github.io",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "nstsenn <anastasia191092@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nstsenn/nstsenn.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
