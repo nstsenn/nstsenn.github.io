@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2" height="64" viewBox="0 0 2 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffcd61;
+      }
+
+      .cls-2 {
+        fill: #ffae00;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_11_копия_3" data-name="Прямоугольник 11 копия 3" class="cls-1" y="32" width="2" height="32"/>
+  <rect id="Прямоугольник_11_копия" data-name="Прямоугольник 11 копия" class="cls-2" width="2" height="32"/>
+</svg>

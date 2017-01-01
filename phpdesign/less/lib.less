@@ -1,0 +1,32 @@
+@imgURL: '../img';
+@orangecolor: #ff8a00;
+@redcolor: #eb6657;
+@whitecolor:#ffffff;
+@greencolor:#2aa85f;
+@titlecolor:#404556;
+@textcolor:#404556;
+
+.dashedborder(@color) {
+	border-bottom:2px dashed @color;
+}
+
+.before(@img) {
+	position: absolute;
+	bottom: -17px;
+	left: ~"calc(50% - 20px)";
+	width: 40px;
+	height: 17px;
+	content: '';
+	background:@img no-repeat 50% 0;
+	z-index: 101;
+}
+
+.bordertitle(@c, @bc){ 
+	margin:0 auto;
+	display:block;
+	padding:15px;
+	max-width:380px;
+	color: @c;
+	border: 3px dotted @bc;
+	border-radius:40px;
+}

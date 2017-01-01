@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans:600|PT+Sans');
+@import 'lib.less';
+
+body{
+   font-family: 'PT Sans', sans-serif;
+   font-size:18px;
+   color:@textcolor;
+}
+
+a{
+   text-decoration: none;
+}
+
+h2{
+   font-size: 26px;
+}
+
+img{
+	max-width:100%;
+}
+
+.how .how-contain, .teacher .teacher-contain, .about .about-contain, .learned .learned-contain, .question .question-contain, .social .social-contain{
+	overflow:hidden;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper{
+	box-sizing:border-box;
+    max-width: 980px;
+    margin: 0 auto ;
+    padding:40px 10px;
+}
+
+.title{ 
+	text-align:center;
+	padding-bottom:25px;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+header{
+	overflow:hidden;
+	background-color: #fefefd;
+	
+		.logoblock{
+		max-width:400px;
+		display:inline-block;
+		margin:-20px 0;
+		
+		@media screen and (max-width: 450px) {	
+			margin:10px auto;
+			text-align:center;
+			}
+			
+			#logo{
+			max-width: 30%;
+			vertical-align:middle;
+			}
+			
+			#logo-name{
+			box-sizing:border-box;
+			width:60%;
+			padding:10px;
+			vertical-align:middle;
+			}
+		
+		}
+		
+		.callin{
+		float:right;
+		margin:-15px 0;
+		@media screen and (max-width: 450px) {	
+			float:none;
+			margin:10px auto;
+			text-align:center;
+			}
+			
+			
+			img{
+		    vertical-align:middle;
+			}
+			
+			#number{
+		    font-size:24.8px;
+		    vertical-align:middle;
+			}
+			
+			#calltext{
+			display:block;
+			font-family: 'Open Sans', sans-serif;
+			font-size:14px;
+			}
+		}
+
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.banner{
+	position: relative;
+	background: url("@{imgURL}/pat_banner.png"),#00b8d2;
+	
+	.dashedborder(@whitecolor); 
+		
+		&::before{
+		.before(url("@{imgURL}/banner-before.png"));
+		}	
+	
+	.banner-contain{
+	margin-bottom:-40px;
+		
+		.banner-img{
+		float:left;
+		max-width:60%;	
+		position:relative;
+		
+		@media screen and (max-width: 876px) {	
+			float:none;
+			max-width:60%;
+			margin:0 auto;
+		}
+		@media screen and (max-width: 660px) {	
+			max-width:100%;
+		}
+			
+			#comp{
+				display:block;
+				
+				@media screen and (max-width: 660px) {	
+				margin:0 auto;
+				}
+			}
+		
+			#cup{
+			position:absolute;
+			right:100%;
+			bottom:150px;
+			
+			@media screen and (max-width: 876px) {	
+			display:none;
+			}
+			
+			}	
+		}
+		
+		.banner-form{
+		float:left;
+		margin-left:-15px;
+		max-width:40%;
+		
+		@media screen and (max-width: 876px) {	
+			float:none;
+			margin:0 auto 10px;
+			max-width:60%;
+		}
+		
+		@media screen and (max-width: 660px) {	
+			max-width:100%;
+		}
+		
+		}
+		
+		.elephants{
+			
+			
+			.img{
+			margin:0 auto;
+			max-width:413px;
+			position:relative;
+			
+			
+			#h1{
+			
+
+			position:absolute;
+			bottom:28%;
+
+			
+				h1{
+				text-align:center;
+				line-height: 29px;
+				font-size: 20px;
+				color: #5a3c0c;
+				padding:5px;
+				}
+			}
+			}
+		}
+		
+			.form{
+			font-family: 'Open Sans', sans-serif;
+			
+				input{
+				box-sizing:border-box;
+				margin:10px auto;
+				width: 80%;
+				border-radius: 10px;
+				text-align: center;
+				font-size: 18px;
+				}
+				
+				#agreetext{
+				display:block;
+				margin:10px auto;
+				color:@whitecolor;
+				font-size: 12px;
+				width: 80%;
+				}
+				
+				.submit{
+				text-align: center;
+					
+					input{
+					padding: 10px 12px;
+					cursor: pointer;
+					border: none;
+					background: #e1515c;
+					text-transform: uppercase;
+					color: @whitecolor;
+					box-shadow: 0px 5px 0px 0px #bc2f3a;
+					
+					&:hover{
+					background: #fc947d;
+					box-shadow: 0px 5px 0px 0px #f0866e;
+					}
+					
+					&:active{
+					background: #fc7c5f;
+					box-shadow: 0px 5px 0px 0px #fb6340;
+					}
+					}
+				}
+				
+				.formrows{
+				text-align: center;
+					
+					input{
+					background-color: @whitecolor;
+					padding: 6px 12px;
+					color:#2c5394;
+					border: 1px solid @whitecolor;
+					}
+				}
+			}
+		}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.how{
+	position: relative;
+	background: url("@{imgURL}/pat_how.png"),@whitecolor;
+	.dashedborder(#2db466);
+	text-align:center;
+	
+		&::before{
+		.before(url("@{imgURL}/how-before.png"));
+		}
+		
+		.border-title{	
+			.bordertitle(#036b7a, #5c7297);
+		}
+		
+		.items .item{
+		box-sizing:border-box;
+		max-width: 27%;
+		float: left;
+		padding: 25px;
+		margin:0 3.16%;
+		
+		@media screen and (max-width: 660px) {	
+				float: none;
+				margin:0 auto;
+				max-width: 60%;
+				}
+				
+		@media screen and (max-width: 450px) {	
+			max-width: 90%;
+			}
+			
+			.circle{
+			display:inline-block;
+			box-sizing:border-box;
+			padding:15px 0;
+			position: relative;
+			z-index: 10;
+			
+				
+				img{
+				border-radius: 50%;
+				background: @orangecolor;
+				z-index: 1000;
+				}
+			}
+			
+			.circletext{
+			display:block;
+			}
+			
+			#title{
+			font-weight:bold;
+			display:block;
+
+			}
+		}	
+	}
+	
+
+.how .items .item:first-child .circle::before{
+    background: url(../img/line_dashed_1.png) no-repeat 0% 0%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 45px;
+    height: 3px;
+    z-index: 0;
+    content: '';
+	
+	@media screen and (max-width: 660px) {	
+				display:none;
+				}
+}
+
+.how .items .item:last-child .circle::before{
+    background: url(../img/line_dashed_2.png) no-repeat 0% 0%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 45px;
+    height: 3px;
+    z-index: 0;
+    content: '';
+	
+	@media screen and (max-width: 660px) {	
+				display:none;
+				}
+}
+
+.how .items .item:nth-child(2) .circle::before {
+    background: url(../img/line.gif) repeat-x 50% 0%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -400%;
+	left: 100%;
+    height: 4px;
+    z-index: -1;
+    content: '';
+	
+	@media screen and (max-width: 876px) {	
+			right: -340%;
+			}
+	@media screen and (max-width: 660px) {	
+				display:none;
+				}
+}
+
+.how .items .item:first-child, .how .items .item:last-child{
+	clear:both;
+	margin:0 36.5%;
+	
+	@media screen and (max-width: 660px) {	
+				float: none;
+				clear:none;
+				margin:0 auto;
+				}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.teacher{
+	position: relative;
+	background: url("@{imgURL}/pat_banner.png"),@greencolor;
+	.dashedborder(@whitecolor);
+	text-align:center;
+	color: @whitecolor;
+	
+		&::before{
+		.before(url("@{imgURL}/teacher-before.png"));
+		}
+		
+		.oneelefant{
+			float:right;
+			max-width:200px;
+			margin-top:30px;
+			@media screen and (max-width: 660px) {	
+				float: none;
+				margin:0 auto;
+				}
+		}
+		
+		.tchfoto{
+		
+			background:#1cbed5;
+			padding:25px;
+			float:left;
+			position:relative;
+			box-sizing:border-box;
+			max-width:200px;
+			margin-top:30px;
+			
+			@media screen and (max-width: 660px) {	
+				float: none;
+				margin:0 auto;
+				}	
+			
+			 img{
+				border-radius:50%;
+				border: 2px solid @whitecolor;
+			 }
+			 
+			&::before{
+				background: url(../img/tape.png) no-repeat 0% 0%;
+				display: block;
+				position: absolute;
+				bottom: -99px;
+				left: 0;
+				width: 197px;
+				height: 103px;
+				overflow: hidden;
+				content: '';
+				z-index:101;
+			}
+		}
+				
+		.aboutteacher{
+		
+			overflow:hidden;
+		
+			.border-title{
+				.bordertitle(@whitecolor, @whitecolor);
+			
+			@media screen and (max-width: 660px) {	
+				margin-top:100px;
+				}
+			
+			}
+			
+			h2{
+				margin:15px auto;
+			}
+			
+			#thrabout{
+				max-width:60%;
+				padding:0 20%;
+				display:block;
+				line-height:1.5em;
+			}
+		}
+		
+		.aboutcourse{
+			margin-top:30px;
+			
+			.border-title{
+				.bordertitle(@whitecolor, @whitecolor);
+			}
+			
+			p{
+				padding:10px 10% 0;
+				line-height:1.5em;
+			}
+		}
+		
+		
+
+	}
+/* -------------------------------------------------------------------------------------------- */
+
+.about{
+	position: relative;
+	background: url("@{imgURL}/pat_fable.png"),#ffd099;
+	.dashedborder(@orangecolor);
+	.wrapper{
+    padding-bottom:30px;
+	}
+		&::before{
+		.before(url("@{imgURL}/about-before.png"));
+		}
+		
+		.justtext{
+		text-align:center;
+		font-size:38px;
+			
+			span{
+			font-size:59px;
+			color:@redcolor;
+			font-family: 'Open Sans', sans-serif;;
+		}
+		}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.learned{
+	position: relative;
+	background: url("@{imgURL}/pat_question.png");
+	.dashedborder(#1cbed5);
+	
+		&::before{
+		.before(url("@{imgURL}/learned-before.png"));
+		}
+		
+		ol{
+		counter-reset: li; 
+		list-style: none;
+		overflow:hidden;	
+
+			
+			li {
+			position: relative;
+			float: left;
+			width: 44%;
+			padding: 5px 5px 5px 30px;
+			margin: 10px;
+			
+			@media screen and (max-width: 876px) {	
+			float:none;
+			margin:0 auto;
+			}
+			
+			@media screen and (max-width: 660px) {	
+				width: 65%;
+				}
+		
+				
+				&::before {
+				content: counter(li) ".";
+				counter-increment: li;
+				position: absolute;
+				left: -10px;
+				top: 50%;
+				margin-top: -15px;
+				background: @redcolor;
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-weight: bold;
+				border-radius: 50%;
+				}
+			}
+		}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.question{
+	position: relative;
+	background: url("@{imgURL}/pat_question.png");
+	.dashedborder(@orangecolor);
+	
+		&::before{
+		.before(url("@{imgURL}/question-before.png"));
+		}
+		
+		.q{
+		padding: 6px 20px;
+		background: @orangecolor;
+		font-size: 20px;
+		}
+		
+		.a{
+		padding: 20px 20px;
+		}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.social{
+	background: url("@{imgURL}/pat_banner.png"),#fec824;
+	.dashedborder(@whitecolor);
+	position:relative;
+	
+	.wrapper{
+		
+	
+	}
+	
+	&::before {
+		background: url(../img/hand_tail.gif) repeat-x 0% 0%;
+		display: block;
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		width: 15%;
+		height: 64px;
+		overflow: hidden;
+		content: '';
+		z-index:101;
+		
+		@media screen and (max-width: 1280px) {	
+				bottom: 10px;
+				}
+				
+		@media screen and (max-width: 876px) {	
+			display: none;
+		}
+	}
+	
+	&::after {
+		background: url(../img/hand_left.png) no-repeat 0% 0%;
+		display: block;
+		position: absolute;
+		bottom: 75px;
+		left: 15%;
+		width: 92px;
+		height: 102px;
+		overflow: hidden;
+		content: '';
+		z-index:101;
+		
+		@media screen and (max-width: 1280px) {	
+				bottom: 10px;
+				}
+				
+		@media screen and (max-width: 876px) {	
+				left: 0;
+				}
+				
+		@media screen and (max-width: 450px) {	
+				display: none;
+		}
+	}	
+	.social-contain{
+		
+	&::before{	
+		background: url(../img/hand_tail.gif) repeat-x 0% 0%;
+		display: block;
+		position: absolute;
+		bottom: 75px;
+		right: 0;
+		width: 15%;
+		height: 64px;
+		overflow: hidden;
+		content: '';
+		
+		@media screen and (max-width: 1280px) {	
+				bottom: 10px;
+				}
+				
+		@media screen and (max-width: 876px) {	
+			display: none;
+		}
+	}
+	
+	&::after {
+		background: url(../img/hand_right.png) no-repeat 0% 0%;
+		display: block;
+		position: absolute;
+		bottom: 75px;
+		right: 15%;
+		width: 92px;
+		height: 102px;
+		overflow: hidden;
+		content: '';
+		
+		@media screen and (max-width: 1280px) {	
+				bottom: 10px;
+				}
+				
+		@media screen and (max-width: 876px) {	
+				right: 0;
+				}
+				
+		@media screen and (max-width: 450px) {	
+			display: none;
+			}
+	}
+		
+		h2{
+		margin: 0 0 45px 0;
+		font-size: 36px;
+		text-align: center;
+		color: @whitecolor;
+		}
+		
+		.ya-share2{
+		text-align: center;
+		}
+	}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+footer{
+	background: @greencolor;
+	font-family: 'Open Sans', sans-serif;
+	color:#43403c;
+	
+	#designed{
+	float:right;
+	}
+}
+
+
+@media screen and (max-width: 875px) {	
+	
+	
+}
